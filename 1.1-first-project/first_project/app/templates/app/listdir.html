@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список файлов</title>
+</head>
+<body>
+    <h3>Список файлов в рабочей директории:</h3>
+    {% for file in files_list %}
+        {{ file }}
+        <br>
+    {% endfor %}
+    <p><a href="{% url 'home' %}"><button>Назад</button></a></p>
+
+</body>
+</html>
