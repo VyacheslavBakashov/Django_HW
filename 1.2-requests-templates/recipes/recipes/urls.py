@@ -16,6 +16,11 @@ Including another URLconf
 
 from django.urls import path
 
+from calculator.views import index, do_omlet, do_pasta, do_buter
+
 urlpatterns = [
-    # здесь зарегистрируйте вашу view-функцию
+    path('', index, name='index'),
+    path('omlet/', do_omlet, name='omlet'),
+    path('pasta/', do_pasta, name='pasta'),
+    path('buter/', do_buter, name='buter'),
 ]
